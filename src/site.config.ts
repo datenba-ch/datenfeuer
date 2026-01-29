@@ -4,7 +4,7 @@ const config: SiteConfig = {
   // Absolute URL to the root of your published site, used for generating links and sitemaps.
   site: 'https://blog.datenba.ch',
   // The name of your site, used in the title and for SEO.
-  title: 'datenba:ch News',
+  title: 'daten:feuer',
   // The description of your site, used for SEO and RSS feed.
   description:
     'Das Blog für Neuigkeiten und Updates aus der datenba:ch-Community – dem hyperlokalen Technologie-Hub in Neckargerach und Umgebung.',
