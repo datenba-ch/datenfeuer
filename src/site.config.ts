@@ -48,10 +48,7 @@ const config: SiteConfig = {
     // The default theme identifier, used when themeMode is "select" or "light-dark-auto".
     // Make sure this is one of the themes listed in `themes` or "auto" for "light-dark-auto" mode.
     default: 'everforest-dark',
-    include: [
-      'everforest-dark',
-      'everforest-light',
-    ],
+    include: ['everforest-dark', 'everforest-light'],
     // Optional overrides for specific themes to customize colors.
     // Their values can be either a literal color (hex, rgb, hsl) or another theme key.
     // See themeKeys list in src/types.ts for available keys to override and reference.
@@ -82,15 +79,16 @@ const config: SiteConfig = {
         link: '#3a94c5',
         list: '#3a94c5',
         background: '#F0F1D2',
-        },
+      },
     },
   },
   // Social links to display in the footer.
   socialLinks: {
     github: 'https://github.com/datenba-ch/',
     // mastodon: 'https://github.com/stelcodes/multiterm-astro',
-    email: 'https://github.com/stelcodes/multiterm-astro',
-    matrix: 'https://matrix.to/#/#community:datenba.ch?client=element.io&web-instance[element.io]=element.datenba.ch',
+    email: 'kontakt@datenba.ch',
+    matrix:
+      'https://matrix.to/#/#community:datenba.ch?client=element.io&web-instance[element.io]=element.datenba.ch',
     rss: true, // Set to true to include an RSS feed link in the footer
   },
   // Configuration for Giscus comments.
@@ -98,13 +96,13 @@ const config: SiteConfig = {
   // You'll need a GitHub repository with discussions enabled and the Giscus app installed.
   // Take the values from the generated script tag at https://giscus.app and fill them in here.
   // If you don't want to use Giscus, set this to undefined.
-  giscus: {
-    repo: 'stelcodes/multiterm-astro',
-    repoId: 'R_kgDOPNnBig',
-    category: 'Giscus',
-    categoryId: 'DIC_kwDOPNnBis4CteOc',
-    reactionsEnabled: true,
-  },
+  //   giscus: {
+  //  repo: 'stelcodes/multiterm-astro',
+  //  repoId: 'R_kgDOPNnBig',
+  //  category: 'Giscus',
+  //  categoryId: 'DIC_kwDOPNnBis4CteOc',
+  //  reactionsEnabled: true,
+  //},
 }
 
 export default config
