@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github-contributions-api.jogruber.de)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:cactus.chat)",
+      "Bash(npm run build:*)",
+      "Bash(sips:*)"
+    ]
+  }
+}
