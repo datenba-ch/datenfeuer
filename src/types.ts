@@ -136,6 +136,13 @@ export type SocialLinks = {
   rss?: boolean
 }
 
+export type Author = {
+  name: string
+  avatar: string
+  bio: string
+  socialLinks?: Omit<SocialLinks, 'rss'>
+}
+
 export type GiscusConfig = {
   repo: string
   repoId: string

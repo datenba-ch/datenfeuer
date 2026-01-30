@@ -1,5 +1,6 @@
 ---
 title: 'Gelbes Band: Obst retten und teilen'
+author: pacey
 published: 2026-01-30
 draft: false
 tags: ['help', 'hubs', 'gelbes-band', 'funktionen', 'teilen', 'verschwendung', 'obst', 'baum', 'band']

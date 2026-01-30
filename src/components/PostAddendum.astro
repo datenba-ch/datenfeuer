@@ -1,30 +1,57 @@
 ---
-import type { FrontmatterImage } from '~/types'
+import type { Author, FrontmatterImage } from '~/types'
 import { Image } from 'astro:assets'
+import SocialLinks from '~/components/SocialLinks.astro'
 
 interface Props {
   avatarImage?: FrontmatterImage
+  author?: Author
 }
-const { avatarImage } = Astro.props
+const { avatarImage, author } = Astro.props
 ---
 
 <div
-  class="flex flex-col sm:flex-row items-center justify-around sm:gap-5 max-w-full mb-6 py-10 bg-accent/8 p-4 rounded-xl"
+  class="flex flex-col sm:flex-row items-center justify-around sm:gap-5 max-w-full mb-6 py-6 bg-accent/8 p-4 rounded-xl"
 >
   {
-    avatarImage && (
-      <Image
-        src={avatarImage.src}
-        alt={avatarImage.alt}
-        class="size-40"
-        height={160}
-        width={160}
-      />
+    author ? (
+      <div class="flex flex-col w-full items-start">
+        <p class="font-semibold text-lg mb-4 text-left">About {author.name}</p>
+        <div class="flex flex-col sm:flex-row items-center sm:items-start sm:gap-5">
+          <img
+            src={author.avatar}
+            alt={`${author.name}'s avatar`}
+            class="size-40 object-cover shrink-0"
+            height={160}
+            width={160}
+          />
+          <div class="flex flex-col items-center sm:items-start flex-1 mt-4 sm:mt-0">
+            <div class="max-w-full prose prose-p:mt-0" set:html={author.bio} />
+            {author.socialLinks && Object.keys(author.socialLinks).length > 0 && (
+              <div class="mt-4 [&>div]:gap-4 [&>div]:justify-start">
+                <SocialLinks socialLinks={author.socialLinks} />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    ) : (
+      <>
+        {avatarImage && (
+          <Image
+            src={avatarImage.src}
+            alt={avatarImage.alt}
+            class="size-40"
+            height={160}
+            width={160}
+          />
+        )}
+        <div>
+          <div class:list={['m-4 max-w-full prose']}>
+            <slot />
+          </div>
+        </div>
+      </>
     )
   }
-  <div>
-    <div class:list={['m-4 max-w-full prose']}>
-      <slot />
-    </div>
-  </div>
 </div>

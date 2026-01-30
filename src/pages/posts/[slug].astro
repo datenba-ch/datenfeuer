@@ -13,6 +13,7 @@ import siteConfig from '~/site.config'
 import Tags from '~/components/Tags.astro'
 import PostInfo from '~/components/PostInfo.astro'
 import ScrollUpButton from '~/components/ScrollUpButton.astro'
+import authors from '~/authors.config'
 
 export const getStaticPaths = (async () => {
   const posts = await getSortedPosts()
@@ -31,10 +32,15 @@ export const getStaticPaths = (async () => {
 const { post, prev, next } = Astro.props
 const postData = post.data
 const { headings, Content: PostContent } = await render(post)
+
+// Look up author from config if specified in post frontmatter
+const postAuthor = postData.author ? authors[postData.author] : undefined
+
+// Fall back to default addendum if no author found
 const addendum = await getCollection('addendum')
 let AddendumContent
 let addendumAvatarImage
-if (addendum.length > 0) {
+if (!postAuthor && addendum.length > 0) {
   const addendumEntry = addendum[0]
   const { Content } = await render(addendumEntry)
   AddendumContent = Content
@@ -85,11 +91,13 @@ if (addendum.length > 0) {
   </article>
   <div class="article-end-marker" aria-hidden="true"></div>
   {
-    AddendumContent && (
+    postAuthor ? (
+      <PostAddendum author={postAuthor} />
+    ) : AddendumContent ? (
       <PostAddendum avatarImage={addendumAvatarImage}>
         <AddendumContent />
       </PostAddendum>
-    )
+    ) : null
   }
   {(prev || next) && <DividerText text="More Posts" />}
   {prev && <PostPreview post={prev} />}
