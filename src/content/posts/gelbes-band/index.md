@@ -13,7 +13,7 @@ coverImage:
 
 ## Ein Band, das verbindet 
 
-**-- was hinter der Aktion steckt**
+**-- was hinter der Aktion steckt & wie wir mit help! unterstützen** 
 
 Vielleicht habt ihr in schonmal Zeit beim Spazierengehen bunte Schleifen an Obstbäumen gesehen. Das **Gelbe Band** ist seit einigen Jahren das Symbol für gelebte Lebensmittelwertschätzung. Obstbaumeigentümer*innen, die ihre Ernte teilen möchten, markieren ihre Bäume mit einem gelben Band und laden damit die Allgemeinheit ein, sich zu bedienen. Laut dem Zentrum für Ernährung und Hauswirtschaft Niedersachsen dürfen so gekennzeichnete Bäume kostenlos und ohne Rücksprache für den Eigenbedarf abgeerntet werden. Diese Initiative hat eine enorme Wirkung: Zwischen 2020 und 2025 verfünfachte sich die Zahl der Bäume in manchen Regionen, und damit gelangten tausende Kilo Obst statt in den Müll auf unsere Teller.
 
