@@ -4,6 +4,10 @@ published: 2026-01-30
 draft: false
 tags: ['help', 'hubs', 'gelbes-band', 'funktionen', 'teilen', 'verschwendung', 'obst', 'baum', 'band']
 toc: true
+coverImage:
+  src: './cover.png'
+  alt: 'Pixelart-Illustration im SNES-Stil: Zwei erwachsene Dorfbewohner in einem Obstgarten. Eine Person bindet ein gelbes Band um einen Apfelbaum, während eine andere Äpfel in einen Korb erntet. Im Hintergrund sind eine Flusslandschaft, eine Brücke und ein Dorf zu sehen, dargestellt in gedeckten, warmen Farben.'
+---
 ---
 
 ## Ein Band, das verbindet 
