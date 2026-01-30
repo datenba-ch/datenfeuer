@@ -5,7 +5,7 @@ title: Über daten:feuer
 
 **daten:feuer** ist das Blog der offenen Community **Datenba.ch** aus dem Neckartal. Der Name des Blogs setzt sich aus *Datenba.ch* und *Lagerfeuer* zusammen: so wie man sich am Lagerfeuer versammelt, um Geschichten zu teilen, möchten wir mit **daten:feuer** Einblicke in unsere Projekte, Erfahrungen und Ideen geben.
 
-<img src="./datenfeuer-logo.webp" alt="Datenfeuer Logo" style="width: 50%; height: auto; margin: 0 auto; display: block;" />
+<img src="/datenfeuer-logo.webp" alt="Datenfeuer Logo" style="width: 50%; height: auto; margin: 0 auto; display: block;" />
 
 ## Wer steckt dahinter?
 
